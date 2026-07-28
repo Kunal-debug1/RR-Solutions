@@ -1,0 +1,6 @@
+User-agent: *
+
+Allow: /
+
+Sitemap:
+https://rrsolutionsofficials.in/sitemap.xml
