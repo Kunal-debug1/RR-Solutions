@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://rrsolutions-official.netlify.app/sitemap.xml
