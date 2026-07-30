@@ -1,0 +1,12 @@
+{
+  "name": "rr-solutions-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production static website for RR Solutions.",
+  "scripts": {
+    "validate": "node scripts/validate-site.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
