@@ -280,6 +280,7 @@ footer a,
     font-size: .94rem;
   }
 }
+<<<<<<< HEAD
 
 .service-links {
   display: flex;
@@ -438,3 +439,5 @@ footer a,
     grid-template-columns: 1fr;
   }
 }
+=======
+>>>>>>> 4c317426d684bae14ee571a720536a0f0e3b071a

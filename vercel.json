@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "cleanUrls": true,
   "redirects": [
     {
@@ -37,6 +38,8 @@
       "permanent": true
     }
   ],
+=======
+>>>>>>> 4c317426d684bae14ee571a720536a0f0e3b071a
   "headers": [
     {
       "source": "/(.*)",
@@ -64,6 +67,7 @@
         {
           "key": "X-Frame-Options",
           "value": "DENY"
+<<<<<<< HEAD
         },
         {
           "key": "Strict-Transport-Security",
@@ -72,6 +76,8 @@
         {
           "key": "X-Permitted-Cross-Domain-Policies",
           "value": "none"
+=======
+>>>>>>> 4c317426d684bae14ee571a720536a0f0e3b071a
         }
       ]
     },
