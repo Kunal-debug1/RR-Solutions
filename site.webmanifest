@@ -1,41 +1,24 @@
 {
-<<<<<<< HEAD
   "name": "RR Solutions | Websites, Software and AI Automation",
   "short_name": "RR Solutions",
   "description": "Website development, custom software and AI automation for growing businesses in India.",
-=======
-  "name": "RR Solutions",
-  "short_name": "RR Solutions",
-  "description": "Web development, custom software, AI automation, and digital growth systems.",
->>>>>>> 4c317426d684bae14ee571a720536a0f0e3b071a
   "start_url": "/",
   "display": "browser",
   "background_color": "#ffffff",
   "theme_color": "#061b39",
-<<<<<<< HEAD
   "lang": "en-IN",
-=======
->>>>>>> 4c317426d684bae14ee571a720536a0f0e3b071a
   "icons": [
     {
       "src": "assets/icons/icon-192.png",
       "sizes": "192x192",
-<<<<<<< HEAD
       "type": "image/png",
       "purpose": "any maskable"
-=======
-      "type": "image/png"
->>>>>>> 4c317426d684bae14ee571a720536a0f0e3b071a
     },
     {
       "src": "assets/icons/icon-512.png",
       "sizes": "512x512",
-<<<<<<< HEAD
       "type": "image/png",
       "purpose": "any maskable"
-=======
-      "type": "image/png"
->>>>>>> 4c317426d684bae14ee571a720536a0f0e3b071a
     }
   ]
 }

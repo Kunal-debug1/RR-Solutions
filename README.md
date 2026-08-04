@@ -12,7 +12,6 @@ Production-ready static marketing site for RR Solutions. It uses plain HTML, CSS
 - 404.html, privacy.html, terms.html — supporting production pages
 - _headers and vercel.json — security and caching headers for Cloudflare Pages/Netlify and Vercel
 
-<<<<<<< HEAD
 ## Generate and validate before deployment
 
 Use Node.js 20 or newer, then run:
@@ -21,15 +20,6 @@ Use Node.js 20 or newer, then run:
     npm run validate
 
 The generator writes the 12 static service pages and the Insights hub from a single source. The validator checks required deployment files, unique SEO metadata, canonical URLs, one H1 per indexable page, JSON-LD parseability, local references, sitemap coverage, accessibility safeguards, and security-header configuration.
-=======
-## Validate before deployment
-
-Use Node.js 20 or newer, then run:
-
-    npm run validate
-
-The validator checks required deployment files, key SEO metadata, document landmarks, stale CSS references, and disallows dynamic HTML insertion in the site script.
->>>>>>> 4c317426d684bae14ee571a720536a0f0e3b071a
 
 ## Deploy
 
