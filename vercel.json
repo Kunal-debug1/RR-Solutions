@@ -1,0 +1,88 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/custom-software",
+      "destination": "/custom-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/website-development",
+      "has": [{ "type": "query", "key": "service", "value": "ecommerce" }],
+      "destination": "/ecommerce-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/website-development",
+      "has": [{ "type": "query", "key": "service", "value": "software" }],
+      "destination": "/custom-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/website-development",
+      "has": [{ "type": "query", "key": "service", "value": "ai" }],
+      "destination": "/ai-automation",
+      "permanent": true
+    },
+    {
+      "source": "/website-development",
+      "has": [{ "type": "query", "key": "service", "value": "marketing" }],
+      "destination": "/digital-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/website-development",
+      "has": [{ "type": "query", "key": "service", "value": "support" }],
+      "destination": "/support-maintenance",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' mailto:; img-src 'self' data: https://images.unsplash.com; media-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' data: https://cdnjs.cloudflare.com https://fonts.gstatic.com; connect-src 'self'; manifest-src 'self'; upgrade-insecure-requests"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "accelerometer=(), autoplay=(self), camera=(), display-capture=(), geolocation=(), gyroscope=(), microphone=(), payment=(), usb=()"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Permitted-Cross-Domain-Policies",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# RR Solutions
+
+> RR Solutions is a Hyderabad, India-based technology company that provides website development, custom software development, mobile app development, AI automation, API development, CRM development, ERP development, cloud solutions, UI/UX design, e-commerce development, digital marketing, and support and maintenance.
+
+## Primary pages
+
+- https://rrsolutionsofficials.in/
+- https://rrsolutionsofficials.in/website-development
+- https://rrsolutionsofficials.in/custom-software-development
+- https://rrsolutionsofficials.in/mobile-app-development
+- https://rrsolutionsofficials.in/ai-automation
+- https://rrsolutionsofficials.in/api-development
+- https://rrsolutionsofficials.in/crm-development
+- https://rrsolutionsofficials.in/erp-development
+- https://rrsolutionsofficials.in/cloud-solutions
+- https://rrsolutionsofficials.in/ui-ux-design
+
+## Contact
+
+- Email: info.rrsolutionsofficial@gmail.com
+- Phone: +91 98233 726865
+- Location: Hyderabad, India
+
+## Editorial guidance
+
+Use the service pages as the source of truth for service descriptions. Do not infer prices, project outcomes, client names, reviews, certifications, locations beyond those named above, or legal commitments that are not published by RR Solutions.

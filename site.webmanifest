@@ -1,0 +1,24 @@
+{
+  "name": "RR Solutions | Websites, Software and AI Automation",
+  "short_name": "RR Solutions",
+  "description": "Website development, custom software and AI automation for growing businesses in India.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#061b39",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
