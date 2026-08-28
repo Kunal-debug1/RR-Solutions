@@ -1,0 +1,5 @@
+Contact: mailto:info.rrsolutionsofficial@gmail.com
+Preferred-Languages: en
+Policy: https://rrsolutionsofficials.in/privacy
+Canonical: https://rrsolutionsofficials.in/security.txt
+Expires: 2027-08-04T00:00:00.000Z

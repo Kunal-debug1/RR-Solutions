@@ -1,0 +1,12 @@
+/* TEAM */
+Company: RR Solutions
+Location: Hyderabad, India
+Contact: info.rrsolutionsofficial@gmail.com
+
+/* SITE */
+Standards: HTML, CSS, JavaScript
+Accessibility: Keyboard navigation, visible focus and reduced-motion support
+Sitemap: https://rrsolutionsofficials.in/sitemap.xml
+
+/* THANKS */
+To the businesses that trust RR Solutions with their next digital step.
