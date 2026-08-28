@@ -1,40 +1,79 @@
-# RR Solutions website
+# RR Solutions Website (Next.js 15 App Router)
 
-Production-ready static marketing site for RR Solutions. It uses plain HTML, CSS, and browser JavaScript, so there is no framework build step or production dependency tree to maintain.
+Production-ready modern website for RR Solutions built with **Next.js 15 (App Router)**, React Server Components, and Bootstrap 5.
 
-## Structure
+## Tech Stack
 
-- index.html — homepage
-- website-development.html — service-page template populated from assets/js/main.js
-- assets/css — base design system and site-level accessibility/responsive enhancements
-- assets/images and assets/videos — optimized logo assets and locally hosted service videos
-- assets/js/main.js — safe client-side rendering, contact email-draft flow, and video modal behavior
-- 404.html, privacy.html, terms.html — supporting production pages
-- _headers and vercel.json — security and caching headers for Cloudflare Pages/Netlify and Vercel
+- **Framework**: Next.js 15 (App Router)
+- **UI & Styling**: Bootstrap 5 + Font Awesome 6
+- **Typography**: Google Fonts (`DM Sans` & `Manrope`) via `next/font/google`
+- **Deployment**: Vercel / Node.js / Docker / any cloud host
 
-## Generate and validate before deployment
+## Project Structure
 
-Use Node.js 20 or newer, then run:
+```
+.
+├── public/                  # Static assets (images, videos, icons, robots, sitemap)
+│   ├── assets/
+│   │   ├── icons/
+│   │   ├── images/
+│   │   └── videos/
+│   ├── favicon.svg
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── manifest.json
+├── src/
+│   ├── app/
+│   │   ├── layout.js        # Root layout with fonts, metadata, JSON-LD
+│   │   ├── globals.css      # Design tokens and custom styles
+│   │   ├── page.js          # Homepage
+│   │   ├── not-found.js     # Custom 404 page
+│   │   ├── blog/page.js     # Insights & topic clusters
+│   │   ├── privacy/page.js  # Privacy notice
+│   │   ├── terms/page.js    # Terms of use
+│   │   └── [service]/page.js# Dynamic SSG service pages (11 services)
+│   ├── components/
+│   │   ├── Topbar.js        # Topbar with contact info
+│   │   ├── Navbar.js        # Responsive mobile-friendly navbar
+│   │   ├── Footer.js        # Footer with dynamic year
+│   │   ├── BackToTop.js     # Scroll-to-top button
+│   │   ├── ContactForm.js   # Fast client-side contact form
+│   │   ├── FAQAccordion.js  # Interactive FAQ accordion
+│   │   └── ServiceVideoModal.js # Lazy-loaded video player
+│   └── data/
+│       └── services.js      # Central service definitions & SEO data
+├── next.config.js           # Redirects, security headers & image config
+├── package.json
+└── jsconfig.json
+```
 
-    node scripts/generate-service-pages.mjs
-    npm run validate
+## Getting Started
 
-The generator writes the 12 static service pages and the Insights hub from a single source. The validator checks required deployment files, unique SEO metadata, canonical URLs, one H1 per indexable page, JSON-LD parseability, local references, sitemap coverage, accessibility safeguards, and security-header configuration.
+### Development
 
-## Deploy
+```bash
+npm install
+npm run dev
+```
 
-No install or build command is required for static hosting. Publish the repository root.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-- Vercel: import the repository and use the default static configuration.
-- Netlify / Cloudflare Pages: publish the repository root; the _headers file is automatically picked up.
-- AWS / other hosts: upload the repository contents and translate _headers into the platform's response-header configuration.
+### Production Build
 
-## Pre-launch checklist
+```bash
+npm run build
+npm run start
+```
 
-1. Run npm run validate.
-2. Confirm the final production domain remains https://rrsolutionsofficials.in.
-3. Check every service video and social link on the deployed domain.
-4. Submit https://rrsolutionsofficials.in/sitemap.xml to Google Search Console and Bing Webmaster Tools.
-5. Validate Open Graph/Twitter previews after deployment.
-6. Run Lighthouse on the deployed site at mobile and desktop widths.
-7. Have the privacy notice and terms reviewed against the business's actual practices and applicable law.
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push your repository to GitHub, GitLab, or Bitbucket.
+2. Import the project in [Vercel](https://vercel.com).
+3. Vercel will automatically detect Next.js and configure build settings.
+4. Deploy!
+
+### Other Hosts (Node.js Server)
+
+Run `npm run build` followed by `npm start` to run on any Node.js 20+ server.
